@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portofolio Siswa</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4c1d95,#7c3aed,#ec4899);
+    color:white;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:40px;
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:30px;
+    margin-bottom:25px;
+}
+
+.profile-img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #f9a8d4;
+}
+
+.info h1{
+    font-size:42px;
+}
+
+.info h3{
+    color:#f9a8d4;
+    margin-top:5px;
+}
+
+.info p{
+    margin-top:15px;
+    line-height:1.8;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+}
+
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#f9a8d4;
+}
+
+.data p{
+    margin-bottom:10px;
+}
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill-name{
+    margin-bottom:6px;
+}
+
+.bar{
+    width:100%;
+    height:12px;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.fill{
+    height:100%;
+    background:linear-gradient(90deg,#f472b6,#f9a8d4);
+}
+
+.project{
+    margin-top:25px;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.12);
+    padding:20px;
+    border-radius:20px;
+    margin-top:15px;
+}
+
+.social{
+    text-align:center;
+    margin-top:30px;
+}
+
+.social a{
+    color:white;
+    font-size:30px;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.social a:hover{
+    color:#f9a8d4;
+    transform:translateY(-5px);
+}
+
+footer{
+    text-align:center;
+    margin-top:25px;
+    opacity:.9;
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .grid{
+        grid-template-columns:1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <img src="foto.jpg" alt="Foto Profil" class="profile-img">
+
+        <div class="info">
+            <h1>Nur Alisa Putri</uh1>
+            <h3>Pelajar</h3>
+
+            <p>
+                Saya adalah siswi yang memiliki minat pada bidang
+                kesehatan khususnya farmasi dengan menekuni pengembangan kesehatan dan teknologi
+        
+            </p>
+        </div>
+    </div>
+
+    <div class="grid">
+
+        <div class="card data">
+            <h2>Data Diri</h2>
+
+            <p><b>Nama :</b> Nur Alisya Putri</p>
+            <p><b>Status :</b> X B Farmasi</p>
+            <p><b>Hobi :</b> Bulu Tangkis</p>
+            <p><b>Cita-cita :</b> Apoteker</p>
+            <p><b>Negara :</b> Indonesia</p>
+        </div>
+
+        <div class="card">
+            <h2>Keahlian</h2>
+
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="bar"><div class="fill" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Canva</div>
+                <div class="bar"><div class="fill" style="width:95%"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Microsoft Office</div>
+                <div class="bar"><div class="fill" style="width:88%"></div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="project">
+        <div class="card">
+            <h2>Project & Karya</h2>
+
+            <div class="project-card">
+                <h3>Website Portofolio</h3>
+                <p>Membuat website profil menggunakan HTML dan CSS.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>Desain Poster</h3>
+                <p>Membuat berbagai desain kreatif menggunakan Canva.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="social">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+
+    <footer>
+        © 2026 Nur Alisya Putri
+    </footer>
+
+</div>
+
+</body>
+</html>
